@@ -11,7 +11,7 @@ const fs = require('fs');
 function readFileAsync(path) {
     return new Promise((resolve, reject) => {
         try {
-            // this reads file completely and close after readAll automatically.
+            // this reads file completely and close after automatically.
             let fileContent = fs.readFileSync(path, {encoding: 'utf-8'});
             resolve(fileContent);
         } catch (err) {
