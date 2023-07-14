@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "sequelize": "^6.32.1"
+  },
+  "name": "express-postgress",
+  "version": "1.0.0",
+  "description": "example postgress express stack",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "startdevel": "ENV_MODE=development node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
