@@ -31,6 +31,7 @@ const inMemoryCache = {
     ]
 };
 
+const USER_NOT_FOUND = 1;
 // Exception is an error object.
 function Exception(code, message) {
     this.code = code;
