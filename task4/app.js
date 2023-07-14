@@ -35,7 +35,7 @@ const dbPassword = DB_PASSWORD ? DB_PASSWORD : null;
 const sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD, {host: DB_HOST, dialect: DB_DIALECT, port: DB_PORT});
 
 // Define the user model.
-const User = sequelize.define('User', {
+const User = sequelize.define('user', {
     name: {
         type: DataTypes.STRING,
         allowNull: false

@@ -116,16 +116,17 @@ app.post("/api/users", (req, res) => {
 
 // edit user and save changes to storage.
 app.put("/api/users/:id", (req, res) => {
+    const userId = parseInt(req.params.id);
     const user = getUserById(req.params.id);
     const { name, email } = req.body;
     if (user) {
-        editUserById(id, {name, email});
+        editUserById(userId, {name, email});
     } else {
         res.status(404).json({message: "user not found"});
         return;
     }
 
-    res.status(200).json({message: `user ${id} has been edited`, user: {name, email}});
+    res.status(200).json({message: `user ${userId} has been edited`, user: {name, email}});
 });
 
 // delete user by id.
